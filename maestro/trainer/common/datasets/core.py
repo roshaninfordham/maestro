@@ -199,8 +199,6 @@ def create_data_loaders(
         logger.error(error_message)
         raise ValueError(error_message)
 
-    logger.info("Initializing data loaders...")
-
     train_loader = (
         DataLoader(
             train_dataset,

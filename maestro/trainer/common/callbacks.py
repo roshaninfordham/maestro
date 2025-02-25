@@ -6,6 +6,9 @@ import lightning
 from lightning.pytorch.callbacks import Callback
 
 from maestro.trainer.common.training import MaestroTrainer, TModel, TProcessor
+from maestro.trainer.logger import get_maestro_logger
+
+logger = get_maestro_logger()
 
 
 class SaveCheckpoint(Callback):
@@ -18,7 +21,7 @@ class SaveCheckpoint(Callback):
         if os.path.exists(checkpoint_path):
             shutil.rmtree(checkpoint_path)
         self.save_model_callback(checkpoint_path, pl_module.processor, pl_module.model)
-        print(f"Saved latest checkpoint to {checkpoint_path}")
+        logger.info(f"Saved latest checkpoint to {checkpoint_path}")
 
         # TODO: Get current metric value from trainer
         # TODO: Compare with best value and save if better

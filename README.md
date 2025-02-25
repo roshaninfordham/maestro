@@ -28,6 +28,10 @@
   <br>
 
   [![version](https://badge.fury.io/py/maestro.svg)](https://badge.fury.io/py/maestro)
+  [![downloads](https://img.shields.io/pypi/dm/maestro)](https://pypistats.org/packages/maestro)
+  [![snyk](https://snyk.io/advisor/python/maestro/badge.svg)](https://snyk.io/advisor/python/maestro)
+  [![license](https://img.shields.io/pypi/l/maestro)](https://github.com/roboflow/maestro/blob/main/LICENSE.md)
+  [![python-version](https://img.shields.io/pypi/pyversions/maestro)](https://badge.fury.io/py/maestro)
   [![colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/roboflow/maestro/blob/develop/cookbooks/maestro_qwen2_5_vl_json_extraction.ipynb)
   [![discord](https://img.shields.io/discord/1159501506232451173?logo=discord&label=discord&labelColor=fff&color=5865f2&link=https%3A%2F%2Fdiscord.gg%2FGbfgXGJ8Bk)](https://discord.gg/GbfgXGJ8Bk)
 
