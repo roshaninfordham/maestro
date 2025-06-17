@@ -36,28 +36,17 @@ theme:
   logo: assets/maestro-logo.svg
   favicon: assets/maestro-logo.svg
   custom_dir: docs/theme
-  palette:
-    # Palette for light mode
-    - scheme: default
-      primary: 'black'
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: 'black'
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: IBM Plex Mono
   features:
     - content.tabs.link
     - content.code.copy
     - navigation.expand
-
+    - navigation.tabs
+    - content.code.annotate
+    - navigation.tracking
+    - content.tooltips
 
 plugins:
   - search
@@ -102,3 +91,6 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+
+extra_css:
+  - stylesheets/rf.css
