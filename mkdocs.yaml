@@ -47,6 +47,7 @@ theme:
     - content.code.annotate
     - navigation.tracking
     - content.tooltips
+    - navigation.tabs.sticky
 
 plugins:
   - search
