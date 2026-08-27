@@ -1,6 +1,10 @@
 import numpy as np
 import pytest
 
+# `qwen_vl_utils` ships with the optional `qwen_2_5_vl` extra. Without this guard the
+# import below aborts collection for the whole run, taking unrelated suites with it.
+pytest.importorskip("qwen_vl_utils", reason="requires the optional `qwen_2_5_vl` extra")
+
 from maestro.trainer.models.qwen_2_5_vl.detection import (
     QWEN_2_5_VL_IMAGE_FACTOR,
     detections_to_suffix_formatter,
